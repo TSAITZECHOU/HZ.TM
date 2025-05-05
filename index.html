@@ -28,7 +28,7 @@
 		// https://github.com/googlecreativelab/teachablemachine-community/tree/master/libraries/image
 		// the link to your model provided by Teachable Machine export panel
 		
-		let model_no = "vxLjyBoTG";
+		let model_no = "vxLjyBoTG"; #感應器網址
 		const URL = "https://teachablemachine.withgoogle.com/models/"+model_no+"/";
 
 		let model, webcam, labelContainer, maxPredictions;
@@ -102,7 +102,7 @@
 				
 				
 				//-------------------------
-				if(prediction[i].probability>0.90){
+				if(prediction[i].probability>0.90){  #感應數值
 				  labelContainer.childNodes[i].innerHTML = "<h5>"+classPrediction+"</h5>";
 
 					if(t2>=cv){
